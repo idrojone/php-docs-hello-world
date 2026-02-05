@@ -1,4 +1,5 @@
-/ Recuperar variables de entorno
+<?php
+// Recuperar variables de entorno
 $dbHost = getenv('DB_HOST');
 $dbName = "prueba";
 $dbUser = getenv('DB_USER');
@@ -32,3 +33,4 @@ try {
     echo "Error al conectar con la base de datos: " . htmlspecialchars($e->getMessage());
     exit;
 }
+
